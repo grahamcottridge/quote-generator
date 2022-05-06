@@ -2,7 +2,7 @@ let apiQuotes = [];
 
 // Show New Quote
 function newQuote() {
-    // Pick a radome quote from apiQuotes array
+    // Pick a random quote from apiQuotes array
     const quote = apiQuotes[Math.floor(Math.random() * apiQuotes.length)];
     console.log(quote)
 }
@@ -21,3 +21,14 @@ async function getQuotes() {
 
 // On Load
 getQuotes();
+
+// ALT FOR GENERATING QUOTES LOCALLY
+
+// Show New Quote
+// function newQuote() {
+//     // Pick a random quote from localQuotes array
+//     const quote = localQuotes[Math.floor(Math.random() * localQuotes.length)];
+//     console.log(quote)
+// }
+
+// newQuote();
